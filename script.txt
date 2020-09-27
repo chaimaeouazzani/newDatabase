@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo test
+
+git config -global user.email"chaimaeouazzani20@gmail.com"
+git config -global user.name "chaimaeouazzani"
+cd /Users/chamitta/Database
+git add netflix.csv
+git commmit -m "File added"
+git add report.txt
+touch report.txt
+git commit -m "report.txt has been added"
+cut -f 1-1,5 -d, netflix.csv| report.txt
+git add netflixFinalreport
+git commmit -m "asorted netflix file has been added"
+git status
+git remoe add origin "https://github.com/chaimaeouazzani/newDatabase.git"
+git push -u origin master 
